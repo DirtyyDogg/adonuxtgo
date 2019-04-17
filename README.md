@@ -1,41 +1,51 @@
-# AdonisJs + LucidMongo + Swagger jsdoc Application
+<p align="center"><img width="400" src="https://raw.githubusercontent.com/nuxt/adonuxt/master/resources/assets/img/logo.png"></p>
 
+# AdoNuxt
 
+> [AdonisJS](http://adonisjs.com/) + [Nuxt.js](https://nuxtjs.org) + [Mongo](https://www.mongodb.com/fr) = :fire:
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/duyluonglc/adonis-mongodb-boilerplate.svg)](https://greenkeeper.io/)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fduyluonglc%2Fadonis-mongodb-boilerplate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fduyluonglc%2Fadonis-mongodb-boilerplate?ref=badge_shield)
+## Installation
 
-## :arrow_up: How to Setup
+This is a project template for [adonis-cli](https://github.com/adonisjs/adonis-cli).
 
-**Step 1:** git clone this repo:
+```bash
+adonis new --blueprint armiakrajowa/adonuxtgo <project-name>
+```
 
-**Step 2:** cd to the cloned repo:
+> Make sure to use a version of adonis-cli >= 2.1.8 (`adonis --version`).
 
-**Step 3:** Install the Application with `npm install`
+## Usage
 
-* The `.env` file is ignored by git keeping those secrets out of your repo.
+| Command | Description |
+|---------|-------------|
+| npm run dev | Start AdonisJS server in development with Nuxt.js in dev mode (hot reloading). Listen on [http://localhost:3000](http://localhost:3000). |
+| npm run build | Build your nuxt.js web application for production. |
+| npm start | Start AdonisJS server in production. |
+| npm lint | Lint your code with [ESLint](http://eslint.org) and [Standard](http://standardjs.com). |
 
-**Step 4:** copy file `.env.example` to `.env`
+## Features
 
-**Step 5:** change default config in `.env` file
+See [AdonisJS features](https://adonisjs.com/docs/about) and [Nuxt.js features](https://nuxtjs.org/guide/#features).
 
-## :arrow_forward: How to Run App
+## AdonisJS Changes
 
-1. cd to the repo
-2. Run `adonis serve --dev`
+- No more `public` directory, use `resources/static/` instead.
+- No more `resources/views` directory.
 
-**Explore to Swagger page:**
- [http://localhost:3333/docs](http://localhost:3333/docs)
- 
- ![alt tag](screen-shoot.png)
+## Nuxt.js Changes
 
- ## test
- 
- copy file `.env.example` to `.env.test`
- 
- `npm run test`
+- The `nuxt.config.js` file is now in `config/nuxt.js`.
+- The Nuxt project directory is `resources`.
 
+## Documentation
 
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fduyluonglc%2Fadonis-mongodb-boilerplate.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fduyluonglc%2Fadonis-mongodb-boilerplate?ref=badge_large)
+- [AdonisJS](http://adonisjs.com/docs/)
+- [Nuxt.js](https://nuxtjs.org/guide/)
+- [Vue.js](http://vuejs.org/guide/)
+- [Mongo](https://www.mongodb.com/fr)
+
+## Licenses
+
+- [AdonisJS license](https://github.com/adonisjs/adonis-framework/blob/develop/LICENSE.txt)
+- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
+- [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
